@@ -1,0 +1,24 @@
+@keyframes colorChange {
+    0%  { background-color: orange; }
+    20%  { background-color: yellow; }
+    40%  { background-color: green; }
+    60%  { background-color: blue; }
+    80% { background-color: purple; }
+    0%   { background-color: red; }
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    animation: colorChange 10s infinite; /* Change color every 5 seconds */
+}
+
+span {
+    font-size: 72px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
