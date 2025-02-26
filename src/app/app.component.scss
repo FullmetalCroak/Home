@@ -7,13 +7,17 @@
     0%   { background-color: red; }
 }
 
+main {
+    height: 100vh;
+}
+
 .bg {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: red;
-    animation: colorChange 10s infinite; /* Change color every 5 seconds */
+    animation: colorChange 10s infinite;
 }
 
 span {
@@ -21,4 +25,19 @@ span {
     text-align: center;
     color: #ffffff;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+img {
+    height: inherit;
+    padding: 2rem;
+}
+
+.flip-horizontal {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
